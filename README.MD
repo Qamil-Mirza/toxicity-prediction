@@ -1,16 +1,29 @@
 # Toxicity Prediction Using Deep Learning
-This notebook is my attempt at replicating the results achieved in the following [paper](https://arxiv.org/abs/1503.01445).
+
+## Project News & Status Quo
+This is still a work in progress! Stay tuned for more updates
+
+[] - Add feature scaling to feature vectors via standard deviation and/or tanh
+[] - Explore sparse features
+[] - Modify train/test pipeline to allow users to experiment with different scaling methods'
+[] - Modify train/test pipeline to allow for a combination of features with a feature threshold constant
+[] - Run experiments on larger scales for dense, sparse and dense + sparse
+
+## About
+This work is inspired by the approach outlined in "Toxicity Prediction using Deep Learning" by Thomas Unterthiner et al., where deep neural networks are applied to predict chemical toxicity. Their work demonstrated the effectiveness of multi-task learning and feature learning in toxicity prediction, setting a new standard in the field. You can find their paper [here](https://arxiv.org/abs/1503.01445).
 
 I'm also using the data from the tox21 dataset, obtained [here](http://bioinf.jku.at/research/DeepTox/tox21.html)
 
 # The Dataset
+The Tox21 dataset contains 12,060 training samples and 647 test samples that represent chemical compounds. Moreover we have 801 dense features that represent chemical descriptors (molecular weight, Aromaticity, Bertz Complexity Index, etc.) as well as 272,776 sparse features in matrix market format that represent chemical substructures such as ECFP10.
 
 # High-Level Approach
+This approach uses deep neural networks (DNNs) to predict toxicity, leveraging DNNs' ability to automatically learn complex features. The model employs multi-task learning, allowing it to predict multiple toxicity types simultaneously by sharing representations across tasks. This is especially useful when labeled data is sparse, as it can benefit from correlations between different toxicity types.
 
 # Usage
-- Training: `python main.py --mode train --save_model --model_path "toxicity_model.keras"`
+- Training: `python main.py --mode train --save_model --model_path <model_path>`
 
-- Testing: 
+- Testing: `python main.py --mode evaluate --model_path <model_path>`
 
 # References
 
