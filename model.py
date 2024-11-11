@@ -1,6 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Dense, Dropout, Input
-from tensorflow.keras.losses import binary_crossentropy
+from tensorflow.keras.layers import Dense, Dropout
 
 # MODEL ARCHITECTURE
 

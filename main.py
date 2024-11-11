@@ -2,10 +2,6 @@ import argparse
 from train import train
 from evaluate import evaluate_model
 from plot import plot_training_history
-from model import ToxicityPredictionModel
-import pandas as pd
-from tensorflow.keras.models import load_model
-from loss_functions import masked_loss
 
 def main(args):
     if args.mode == 'train':
