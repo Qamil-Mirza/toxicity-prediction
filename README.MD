@@ -3,11 +3,12 @@
 ## Project News & Status Quo
 This is still a work in progress! Stay tuned for more updates
 
-[] - Add feature scaling to feature vectors via standard deviation and/or tanh
-[] - Explore sparse features
-[] - Modify train/test pipeline to allow users to experiment with different scaling methods'
-[] - Modify train/test pipeline to allow for a combination of features with a feature threshold constant
-[] - Run experiments on larger scales for dense, sparse and dense + sparse
+- [ ] Add feature scaling to feature vectors via standard deviation and/or tanh
+- [ ] Explore sparse features
+- [ ] Modify train/test pipeline to allow users to experiment with different scaling methods
+- [ ] Modify train/test pipeline to allow for a combination of features with a feature threshold constant
+- [ ] Run experiments on larger scales for dense, sparse, and dense + sparse
+
 
 ## About
 This work is inspired by the approach outlined in "Toxicity Prediction using Deep Learning" by Thomas Unterthiner et al., where deep neural networks are applied to predict chemical toxicity. Their work demonstrated the effectiveness of multi-task learning and feature learning in toxicity prediction, setting a new standard in the field. You can find their paper [here](https://arxiv.org/abs/1503.01445).
