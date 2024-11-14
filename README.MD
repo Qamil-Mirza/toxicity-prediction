@@ -1,7 +1,9 @@
 # Toxicity Prediction Using Deep Learning
 
 ## Project News & Status Quo
-This is still a work in progress! Stay tuned for more updates
+This is still a work in progress! Stay tuned for more updates:
+
+[ ] - Add Hyperparameter Tuning Logic
 
 ## About
 This work is my attempt at replicating the approach outlined in "Toxicity Prediction using Deep Learning" by Thomas Unterthiner et al., where deep neural networks are applied to predict chemical toxicity. Their work demonstrated the effectiveness of multi-task learning and feature learning in toxicity prediction, setting a new standard in the field. You can find their paper [here](https://arxiv.org/abs/1503.01445). 
