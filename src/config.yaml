@@ -1,0 +1,21 @@
+hyperparameters:
+  hidden_dim: 1024
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 1
+  dropout: 0.5
+
+cross_validation:
+  n_splits: 5
+  random_state: 42
+  shuffle: True
+
+data:
+  imputation_strategy: median
+  scaling_strategy: standard
+
+paths:
+  x_train_dense: "data/tox21_dense_train.csv"
+  y_train_dense: "data/tox21_labels_train.csv"
+  x_test_dense: "data/tox21_dense_test.csv"
+  y_test_dense: "data/tox21_labels_test.csv"
