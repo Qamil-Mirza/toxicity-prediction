@@ -3,16 +3,16 @@
 ## Project News & Status Quo
 This is still a work in progress! Stay tuned for more updates:
 
-[x] - Add Hyperparameter Tuning Logic
-[ ] - Add logging to train.py
-[ ] - Add hyperparameters to cv_results for ease of analysis
-[ ] - Write plotting logic for model loss
-[ ] - write plotting logic for test mean auc
-[ ] - Add additional Hyperparameters for flexibility
-[ ] - Write Notebook exploring sparse features
-[ ] - Integrate sparse features into pipeline
-[ ] - Dockerize
-[ ] - Cleanup documentation
+- [x] Add Hyperparameter Tuning Logic
+- [ ] Add logging to train.py
+- [ ] Add hyperparameters to cv_results for ease of analysis
+- [ ] Write plotting logic for model loss
+- [ ] write plotting logic for test mean auc
+- [ ] Add additional Hyperparameters for flexibility
+- [ ] Write Notebook exploring sparse features
+- [ ] Integrate sparse features into pipeline
+- [ ] Dockerize
+- [ ] Cleanup documentation
 
 ## About
 This work is my attempt at replicating the approach outlined in "Toxicity Prediction using Deep Learning" by Thomas Unterthiner et al., where deep neural networks are applied to predict chemical toxicity. Their work demonstrated the effectiveness of multi-task learning and feature learning in toxicity prediction, setting a new standard in the field. You can find their paper [here](https://arxiv.org/abs/1503.01445). 
