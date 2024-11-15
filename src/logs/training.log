@@ -1,0 +1,21 @@
+2024-11-15 00:43:36,804 - INFO - Successfully Loaded Config File
+2024-11-15 00:43:38,047 - INFO - Successfully Loaded and Processed Data
+2024-11-15 00:43:38,047 - INFO - Starting Final Training with the hyperparameters:
+2024-11-15 00:43:38,047 - INFO - hidden_dim: 1024
+2024-11-15 00:43:38,047 - INFO - learning_rate: 0.001
+2024-11-15 00:43:38,047 - INFO - batch_size: 32
+2024-11-15 00:43:38,048 - INFO - epochs: 1
+2024-11-15 00:43:38,048 - INFO - imputation_strategy: median
+2024-11-15 00:43:38,048 - INFO - dropout: 0.5
+2024-11-15 00:43:39,021 - INFO - Successfully Initialized Model and Optimizer
+2024-11-15 00:43:39,021 - INFO - Fitting Imputer and Scaler on Training Data
+2024-11-15 00:43:40,058 - INFO - Successfully Fitted Imputer and Scaler on Training Data
+2024-11-15 00:43:40,059 - INFO - Saving the scaler and imputer...
+2024-11-15 00:43:40,063 - INFO - Successfully Saved the Scaler and Imputer
+2024-11-15 00:43:40,063 - INFO - Scaling and Imputing Training Data...
+2024-11-15 00:43:40,318 - INFO - Successfully Scaled and Imputed Training Data
+2024-11-15 00:43:40,319 - INFO - Training Final Model...
+2024-11-15 00:43:50,062 - INFO - Successfully Trained Final Model
+2024-11-15 00:43:50,063 - INFO - Saving Final Model...
+2024-11-15 00:43:50,083 - INFO - Successfully Saved Final Model
+2024-11-15 00:43:50,083 - INFO - Training Completed

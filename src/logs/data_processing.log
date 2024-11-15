@@ -1,25 +1,7 @@
-2024-11-14 23:34:49,432 [INFO] Successfully Loaded Training Data
-2024-11-14 23:34:49,433 [INFO] X Train Dimensions: (12060, 802)
-2024-11-14 23:34:49,433 [INFO] Y Train Dimensions: (12060, 13)
-2024-11-14 23:34:49,433 [INFO] Now merging X train and Y train for train-validation splitting
-2024-11-14 23:34:49,455 [INFO] Successfully Merged X Train and Y Train
-2024-11-14 23:34:49,456 [INFO] Train DataFrame Dimensions: (12060, 814)
-2024-11-14 23:34:49,520 [INFO] Successfully Split Train DataFrame into Cross Validation and Final Train DataFrames
-2024-11-14 23:34:49,521 [INFO] CV DataFrame Dimensions: (2412, 814)
-2024-11-14 23:34:49,521 [INFO] Final Train DataFrame Dimensions: (9648, 814)
-2024-11-14 23:34:49,521 [INFO] Calculating Class Density For Cross Validation -- Keeping only compounds with at least 8 labels in cross validation set
-2024-11-14 23:34:49,526 [INFO] Successfully Filtered Cross Validation DataFrame
-2024-11-14 23:34:49,527 [INFO] Concatening unused rows from cross validation set to final train set
-2024-11-14 23:34:49,573 [INFO] Successfully Concatenated Unused Rows from Cross Validation Set to Final Train Set
-2024-11-14 23:34:49,574 [INFO] Final Train DataFrame Dimensions: (10328, 815)
-2024-11-14 23:34:49,574 [INFO] Filtered CV DataFrame Dimensions: (1732, 815)
-2024-11-14 23:34:50,528 [INFO] Fitting Imputer and Scaler on Training Data
-2024-11-14 23:34:50,528 [INFO] Fitting Scaler
-2024-11-14 23:34:50,633 [INFO] Fitting Imputer
-2024-11-14 23:35:07,991 [INFO] Successfully Loaded Test Data
-2024-11-14 23:35:07,991 [INFO] X Test Dimensions: (647, 802)
-2024-11-14 23:35:07,991 [INFO] Y Test Dimensions: (647, 12)
-2024-11-14 23:35:07,991 [INFO] Imputing and Scaling Test Data
-2024-11-14 23:35:08,007 [INFO] Successfully Imputed and Scaled Test Data
-2024-11-14 23:35:08,007 [INFO] Generating Masks For Missing Labels in Test Data
-2024-11-14 23:35:08,008 [INFO] Successfully Generated Masks For Missing Labels in Test Data
+2024-11-15 00:45:43,189 - INFO - Successfully Loaded Test Data
+2024-11-15 00:45:43,189 - INFO - X Test Dimensions: (647, 802)
+2024-11-15 00:45:43,189 - INFO - Y Test Dimensions: (647, 12)
+2024-11-15 00:45:43,189 - INFO - Imputing and Scaling Test Data
+2024-11-15 00:45:43,203 - INFO - Successfully Imputed and Scaled Test Data
+2024-11-15 00:45:43,203 - INFO - Generating Masks For Missing Labels in Test Data
+2024-11-15 00:45:43,204 - INFO - Successfully Generated Masks For Missing Labels in Test Data

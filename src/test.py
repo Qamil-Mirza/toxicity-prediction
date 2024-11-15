@@ -6,6 +6,13 @@ from utils.processData import test_load_and_process_data
 from models.MultiTaskToxicityModel import MultiTaskToxicityModel
 from sklearn.metrics import roc_auc_score
 import joblib
+from utils.loggers import setup_logger
+import os
+
+# === LOGGER === #
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+log_path = os.path.join(project_root, "src/logs/testing.log")
+test_logger = setup_logger("testing_logger", log_path)
 
 with open("config.yaml") as stream:
     try:
