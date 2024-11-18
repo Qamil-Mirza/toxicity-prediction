@@ -57,10 +57,10 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(df_cv_filtered)):
     fold_train_set = df_cv_filtered.iloc[train_idx]
     fold_val_set = df_cv_filtered.iloc[val_idx]
 
-    # combine fold train set with final train set
+    # Combine fold train set with final train set
     combined_train_set = pd.concat([df_final_train, fold_train_set], axis=0)
 
-    # separate features and labels
+    # Separate features and labels
     X_train = combined_train_set.iloc[:, 1:-13]
     y_train = combined_train_set.iloc[:, -13:]
     X_val = fold_val_set.iloc[:, 1:-13]
@@ -70,9 +70,9 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(df_cv_filtered)):
     X_train = IMPUTER.fit_transform(X_train)
     X_val = IMPUTER.transform(X_val)
 
-    # standardize features
-    X_train = SCALER.fit_transform(X_train) # this converts to numpy array
-    X_val = SCALER.transform(X_val) # this converts to numpy array
+    # Standardize features
+    X_train = SCALER.fit_transform(X_train)  # This converts to numpy array
+    X_val = SCALER.transform(X_val)  # This converts to numpy array
 
     # Drop last column of y_train and y_val which is the label_density
     y_train = y_train.iloc[:, :-1]
@@ -81,18 +81,24 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(df_cv_filtered)):
     # Reset indices for alignment
     y_val.reset_index(drop=True, inplace=True)
 
-    # initialize model
+    # Initialize model
     model = MultiTaskToxicityModel(input_dim=X_train.shape[1])
 
-    # initialize optimizer
-    optimizer = Adam(model.parameters(), lr=0.001)
+    # Initialize optimizer
+    optimizer = Adam(model.parameters(), lr=config["hyperparameters"]["learning_rate"])
 
-    # train model
+    # Train model
     model, losses = train_model(model, optimizer, X_train, y_train, config["hyperparameters"]["batch_size"])
 
     # CROSS-VALIDATION
-    fold_results = {}
-    
+    fold_results = {
+        "fold": fold + 1,
+        "hidden_dim": config["hyperparameters"]["hidden_dim"],
+        "learning_rate": config["hyperparameters"]["learning_rate"],
+        "batch_size": config["hyperparameters"]["batch_size"],
+        "dropout": config["hyperparameters"]["dropout"]
+    }
+
     for task_idx, task in enumerate(y_train.columns):  # Use task index for slicing y_pred_task
         # Get the target values for the current task
         y_val_task = y_val[task]
@@ -108,15 +114,16 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(df_cv_filtered)):
 
         # Compute AUC for the current task
         auc = roc_auc_score(y_val_task, y_pred_task_specific)
-        fold_results[task] = auc
+        fold_results[f"auc_{task}"] = auc
 
-    
     # Store results for this fold
     cv_results.append(fold_results)
     cross_val_logger.info(f"Fold {fold + 1} AUCs: {fold_results}")
 
-cross_val_logger.info("Cross-Validation Complete")
-cross_val_logger.info("Saving Cross-Validation Results...")
+# Convert cv_results to a DataFrame and include hyperparameter columns
 cv_results_df = pd.DataFrame(cv_results)
 
-cv_results_df.to_csv("results/cv_results.csv", index=False)
+# Save the cross-validation results along with hyperparameters
+output_path = "results/cv_results_with_hyperparams.csv"
+cv_results_df.to_csv(output_path, index=False)
+cross_val_logger.info(f"Cross-Validation Results Saved to {output_path}")

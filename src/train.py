@@ -3,6 +3,14 @@ from torch.optim import Adam
 import torch
 from models.MultiTaskToxicityModel import masked_bce_loss
 import yaml
+import os
+from utils.loggers import setup_logger
+
+# === LOGGER === #
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+log_path = os.path.join(project_root, "src/logs/training.log")
+train_logger = setup_logger("training_logger", log_path)
+
 
 # Load the config file
 with open("config.yaml") as stream:
@@ -53,7 +61,7 @@ def train_model(model, optimizer, X_train, y_train, batch_size):
         # Print average loss for the epoch
         avg_loss = total_loss / len(train_loader)
         epoch_losses.append(avg_loss)
-        print(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss}")
+        train_logger.info(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss}")
 
     # Return the trained model
     return model, epoch_losses

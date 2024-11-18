@@ -1,0 +1,87 @@
+2024-11-17 16:18:26,783 - INFO - Successfully Loaded Config File
+2024-11-17 16:18:27,833 - INFO - Successfully Loaded and Processed Data
+2024-11-17 16:18:27,834 - INFO - Starting Final Training with the hyperparameters:
+2024-11-17 16:18:27,834 - INFO - hidden_dim: 1024
+2024-11-17 16:18:27,834 - INFO - learning_rate: 0.001
+2024-11-17 16:18:27,834 - INFO - batch_size: 32
+2024-11-17 16:18:27,834 - INFO - epochs: 1
+2024-11-17 16:18:27,835 - INFO - imputation_strategy: median
+2024-11-17 16:18:27,835 - INFO - dropout: 0.5
+2024-11-17 16:18:28,722 - INFO - Successfully Initialized Model and Optimizer
+2024-11-17 16:18:28,723 - INFO - Fitting Imputer and Scaler on Training Data
+2024-11-17 16:18:29,518 - INFO - Successfully Fitted Imputer and Scaler on Training Data
+2024-11-17 16:18:29,518 - INFO - Saving the scaler and imputer...
+2024-11-17 16:18:29,519 - INFO - Successfully Saved the Scaler and Imputer
+2024-11-17 16:18:29,520 - INFO - Scaling and Imputing Training Data...
+2024-11-17 16:18:29,636 - INFO - Successfully Scaled and Imputed Training Data
+2024-11-17 16:18:29,636 - INFO - Training Final Model...
+2024-11-17 16:18:36,263 - INFO - Epoch 1/1, Loss: 63.041614945827995
+2024-11-17 16:18:36,557 - INFO - Successfully Trained Final Model
+2024-11-17 16:18:36,557 - INFO - Saving Final Model...
+2024-11-17 16:18:36,575 - INFO - Successfully Saved Final Model
+2024-11-17 16:18:36,576 - INFO - Training Completed
+2024-11-17 21:04:39,162 - INFO - Final Test AUCs for each task:
+2024-11-17 21:04:39,162 - INFO - NR.AhR: 0.892
+2024-11-17 21:04:39,162 - INFO - NR.AR: 0.737
+2024-11-17 21:04:39,162 - INFO - NR.AR.LBD: 0.793
+2024-11-17 21:04:39,162 - INFO - NR.Aromatase: 0.777
+2024-11-17 21:04:39,163 - INFO - NR.ER: 0.767
+2024-11-17 21:04:39,163 - INFO - NR.ER.LBD: 0.710
+2024-11-17 21:04:39,163 - INFO - NR.PPAR.gamma: 0.716
+2024-11-17 21:04:39,163 - INFO - SR.ARE: 0.780
+2024-11-17 21:04:39,163 - INFO - SR.ATAD5: 0.801
+2024-11-17 21:04:39,163 - INFO - SR.HSE: 0.758
+2024-11-17 21:04:39,163 - INFO - SR.MMP: 0.910
+2024-11-17 21:04:39,163 - INFO - SR.p53: 0.812
+2024-11-17 21:04:39,165 - INFO - Plotting the mean AUC on the test set...
+2024-11-17 21:04:39,414 - INFO - Testing complete!
+2024-11-17 21:04:39,414 - INFO - Results saved to results/final_test_results.csv
+2024-11-17 21:04:39,414 - INFO - Plots saved to plots/test-mean-auc.png
+2024-11-17 21:07:06,962 - INFO - Final Test AUCs for each task:
+2024-11-17 21:07:06,963 - INFO - NR.AhR: 0.892
+2024-11-17 21:07:06,963 - INFO - NR.AR: 0.737
+2024-11-17 21:07:06,963 - INFO - NR.AR.LBD: 0.793
+2024-11-17 21:07:06,963 - INFO - NR.Aromatase: 0.777
+2024-11-17 21:07:06,963 - INFO - NR.ER: 0.767
+2024-11-17 21:07:06,963 - INFO - NR.ER.LBD: 0.710
+2024-11-17 21:07:06,963 - INFO - NR.PPAR.gamma: 0.716
+2024-11-17 21:07:06,963 - INFO - SR.ARE: 0.780
+2024-11-17 21:07:06,963 - INFO - SR.ATAD5: 0.801
+2024-11-17 21:07:06,963 - INFO - SR.HSE: 0.758
+2024-11-17 21:07:06,963 - INFO - SR.MMP: 0.910
+2024-11-17 21:07:06,963 - INFO - SR.p53: 0.812
+2024-11-17 21:07:06,965 - INFO - Plotting the mean AUC on the test set...
+2024-11-17 21:07:21,208 - INFO - Final Test AUCs for each task:
+2024-11-17 21:07:21,208 - INFO - NR.AhR: 0.892
+2024-11-17 21:07:21,208 - INFO - NR.AR: 0.737
+2024-11-17 21:07:21,208 - INFO - NR.AR.LBD: 0.793
+2024-11-17 21:07:21,208 - INFO - NR.Aromatase: 0.777
+2024-11-17 21:07:21,208 - INFO - NR.ER: 0.767
+2024-11-17 21:07:21,208 - INFO - NR.ER.LBD: 0.710
+2024-11-17 21:07:21,208 - INFO - NR.PPAR.gamma: 0.716
+2024-11-17 21:07:21,208 - INFO - SR.ARE: 0.780
+2024-11-17 21:07:21,208 - INFO - SR.ATAD5: 0.801
+2024-11-17 21:07:21,208 - INFO - SR.HSE: 0.758
+2024-11-17 21:07:21,208 - INFO - SR.MMP: 0.910
+2024-11-17 21:07:21,208 - INFO - SR.p53: 0.812
+2024-11-17 21:07:21,211 - INFO - Plotting the mean AUC on the test set...
+2024-11-17 21:07:34,398 - INFO - Testing complete!
+2024-11-17 21:07:34,399 - INFO - Results saved to results/final_test_results.csv
+2024-11-17 21:07:34,399 - INFO - Plots saved to plots/test-mean-auc.png
+2024-11-17 21:07:57,229 - INFO - Final Test AUCs for each task:
+2024-11-17 21:07:57,229 - INFO - NR.AhR: 0.892
+2024-11-17 21:07:57,229 - INFO - NR.AR: 0.737
+2024-11-17 21:07:57,229 - INFO - NR.AR.LBD: 0.793
+2024-11-17 21:07:57,229 - INFO - NR.Aromatase: 0.777
+2024-11-17 21:07:57,229 - INFO - NR.ER: 0.767
+2024-11-17 21:07:57,230 - INFO - NR.ER.LBD: 0.710
+2024-11-17 21:07:57,230 - INFO - NR.PPAR.gamma: 0.716
+2024-11-17 21:07:57,230 - INFO - SR.ARE: 0.780
+2024-11-17 21:07:57,230 - INFO - SR.ATAD5: 0.801
+2024-11-17 21:07:57,230 - INFO - SR.HSE: 0.758
+2024-11-17 21:07:57,230 - INFO - SR.MMP: 0.910
+2024-11-17 21:07:57,230 - INFO - SR.p53: 0.812
+2024-11-17 21:07:57,232 - INFO - Plotting the mean AUC on the test set...
+2024-11-17 21:08:03,961 - INFO - Testing complete!
+2024-11-17 21:08:03,961 - INFO - Results saved to results/final_test_results.csv
+2024-11-17 21:08:03,961 - INFO - Plots saved to plots/test-mean-auc.png

@@ -8,7 +8,7 @@ from sklearn.metrics import roc_auc_score
 import joblib
 from utils.loggers import setup_logger
 import os
-
+from utils.visualize import plot_test_mean_auc
 # === LOGGER === #
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_path = os.path.join(project_root, "src/logs/testing.log")
@@ -58,11 +58,20 @@ for task_idx, task in enumerate(y_test.columns):
         auc = roc_auc_score(y_test_task_valid.numpy(), y_test_pred_task_valid.numpy())
         test_results[task] = auc
     else:
-        print(f"Task {task} has only one class; skipping AUC calculation.")
+        test_logger.info(f"Task {task} has only one class; skipping AUC calculation.")
 
 # Display results
-print("Final Test AUCs for each task:")
+test_logger.info("Final Test AUCs for each task:")
 for task, auc in test_results.items():
-    print(f"{task}: {auc:.3f}")
+    test_logger.info(f"{task}: {auc:.3f}")
 
-final_results_df = pd.DataFrame(list(test_results.items()), columns=["Task", "AUC"]).to_csv("results/final_test_results.csv", index=False)
+final_results_df = pd.DataFrame(list(test_results.items()), columns=["Task", "AUC"])
+final_results_df.to_csv("results/final_test_results.csv", index=False)
+
+# plot the results
+test_logger.info("Plotting the mean AUC on the test set...")
+plot_test_mean_auc(final_results_df)
+
+test_logger.info("Testing complete!")
+test_logger.info("Results saved to results/final_test_results.csv")
+test_logger.info("Plots saved to plots/test-mean-auc.png")

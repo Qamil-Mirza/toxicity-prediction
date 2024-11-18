@@ -1,21 +1,120 @@
-2024-11-15 00:43:36,804 - INFO - Successfully Loaded Config File
-2024-11-15 00:43:38,047 - INFO - Successfully Loaded and Processed Data
-2024-11-15 00:43:38,047 - INFO - Starting Final Training with the hyperparameters:
-2024-11-15 00:43:38,047 - INFO - hidden_dim: 1024
-2024-11-15 00:43:38,047 - INFO - learning_rate: 0.001
-2024-11-15 00:43:38,047 - INFO - batch_size: 32
-2024-11-15 00:43:38,048 - INFO - epochs: 1
-2024-11-15 00:43:38,048 - INFO - imputation_strategy: median
-2024-11-15 00:43:38,048 - INFO - dropout: 0.5
-2024-11-15 00:43:39,021 - INFO - Successfully Initialized Model and Optimizer
-2024-11-15 00:43:39,021 - INFO - Fitting Imputer and Scaler on Training Data
-2024-11-15 00:43:40,058 - INFO - Successfully Fitted Imputer and Scaler on Training Data
-2024-11-15 00:43:40,059 - INFO - Saving the scaler and imputer...
-2024-11-15 00:43:40,063 - INFO - Successfully Saved the Scaler and Imputer
-2024-11-15 00:43:40,063 - INFO - Scaling and Imputing Training Data...
-2024-11-15 00:43:40,318 - INFO - Successfully Scaled and Imputed Training Data
-2024-11-15 00:43:40,319 - INFO - Training Final Model...
-2024-11-15 00:43:50,062 - INFO - Successfully Trained Final Model
-2024-11-15 00:43:50,063 - INFO - Saving Final Model...
-2024-11-15 00:43:50,083 - INFO - Successfully Saved Final Model
-2024-11-15 00:43:50,083 - INFO - Training Completed
+2024-11-17 20:41:05,258 - INFO - Successfully Loaded Config File
+2024-11-17 20:41:06,322 - INFO - Successfully Loaded and Processed Data
+2024-11-17 20:41:06,322 - INFO - Starting Final Training with the hyperparameters:
+2024-11-17 20:41:06,322 - INFO - hidden_dim: 1024
+2024-11-17 20:41:06,322 - INFO - learning_rate: 0.001
+2024-11-17 20:41:06,322 - INFO - batch_size: 32
+2024-11-17 20:41:06,322 - INFO - epochs: 1
+2024-11-17 20:41:06,323 - INFO - imputation_strategy: median
+2024-11-17 20:41:06,323 - INFO - dropout: 0.5
+2024-11-17 20:41:06,998 - INFO - Successfully Initialized Model and Optimizer
+2024-11-17 20:41:06,998 - INFO - Fitting Imputer and Scaler on Training Data
+2024-11-17 20:41:07,642 - INFO - Successfully Fitted Imputer and Scaler on Training Data
+2024-11-17 20:41:07,642 - INFO - Saving the scaler and imputer...
+2024-11-17 20:41:07,644 - INFO - Successfully Saved the Scaler and Imputer
+2024-11-17 20:41:07,644 - INFO - Scaling and Imputing Training Data...
+2024-11-17 20:41:07,754 - INFO - Successfully Scaled and Imputed Training Data
+2024-11-17 20:41:07,754 - INFO - Training Final Model...
+2024-11-17 20:41:13,950 - INFO - Epoch 1/1, Loss: 63.370355859998575
+2024-11-17 20:41:14,150 - INFO - Successfully Trained Final Model
+2024-11-17 20:41:14,150 - INFO - Saving Final Model...
+2024-11-17 20:41:14,165 - INFO - Successfully Saved Final Model
+2024-11-17 20:41:14,166 - INFO - Training Completed
+2024-11-17 20:42:21,036 - INFO - Successfully Loaded Config File
+2024-11-17 20:42:21,986 - INFO - Successfully Loaded and Processed Data
+2024-11-17 20:42:21,986 - INFO - Starting Final Training with the hyperparameters:
+2024-11-17 20:42:21,986 - INFO - hidden_dim: 1024
+2024-11-17 20:42:21,986 - INFO - learning_rate: 0.001
+2024-11-17 20:42:21,986 - INFO - batch_size: 32
+2024-11-17 20:42:21,986 - INFO - epochs: 1
+2024-11-17 20:42:21,987 - INFO - imputation_strategy: median
+2024-11-17 20:42:21,987 - INFO - dropout: 0.5
+2024-11-17 20:42:22,685 - INFO - Successfully Initialized Model and Optimizer
+2024-11-17 20:42:22,685 - INFO - Fitting Imputer and Scaler on Training Data
+2024-11-17 20:42:23,548 - INFO - Successfully Fitted Imputer and Scaler on Training Data
+2024-11-17 20:42:23,549 - INFO - Saving the scaler and imputer...
+2024-11-17 20:42:23,550 - INFO - Successfully Saved the Scaler and Imputer
+2024-11-17 20:42:23,550 - INFO - Scaling and Imputing Training Data...
+2024-11-17 20:42:23,683 - INFO - Successfully Scaled and Imputed Training Data
+2024-11-17 20:42:23,684 - INFO - Training Final Model...
+2024-11-17 20:42:30,340 - INFO - Epoch 1/1, Loss: 63.83346587142708
+2024-11-17 20:42:30,541 - INFO - Successfully Trained Final Model
+2024-11-17 20:42:30,542 - INFO - Saving Final Model...
+2024-11-17 20:42:30,557 - INFO - Successfully Saved Final Model
+2024-11-17 20:42:30,557 - INFO - Training Completed
+2024-11-17 20:44:06,934 - INFO - Epoch 1/5, Loss: 62.452094833962924
+2024-11-17 20:44:14,056 - INFO - Epoch 2/5, Loss: 58.27646945640242
+2024-11-17 20:44:21,282 - INFO - Epoch 3/5, Loss: 56.877943137685996
+2024-11-17 20:44:28,790 - INFO - Epoch 4/5, Loss: 56.01858726373242
+2024-11-17 20:44:36,288 - INFO - Epoch 5/5, Loss: 55.363361674693365
+2024-11-17 20:44:45,042 - INFO - Epoch 1/5, Loss: 63.10372666507066
+2024-11-17 20:44:52,635 - INFO - Epoch 2/5, Loss: 59.75451073076891
+2024-11-17 20:45:00,247 - INFO - Epoch 3/5, Loss: 58.04387177839591
+2024-11-17 20:45:08,156 - INFO - Epoch 4/5, Loss: 56.74331705162571
+2024-11-17 20:45:15,807 - INFO - Epoch 5/5, Loss: 55.35604975886176
+2024-11-17 20:45:24,906 - INFO - Epoch 1/5, Loss: 64.3896893259615
+2024-11-17 20:45:32,745 - INFO - Epoch 2/5, Loss: 58.91385783161714
+2024-11-17 20:45:40,571 - INFO - Epoch 3/5, Loss: 56.88533221148665
+2024-11-17 20:45:48,555 - INFO - Epoch 4/5, Loss: 55.99700694529172
+2024-11-17 20:45:56,359 - INFO - Epoch 5/5, Loss: 54.98008810434419
+2024-11-17 20:46:05,396 - INFO - Epoch 1/5, Loss: 63.49651104747762
+2024-11-17 20:46:13,169 - INFO - Epoch 2/5, Loss: 59.14903039743043
+2024-11-17 20:46:21,035 - INFO - Epoch 3/5, Loss: 58.2442945550508
+2024-11-17 20:46:28,977 - INFO - Epoch 4/5, Loss: 56.90633009077742
+2024-11-17 20:46:36,996 - INFO - Epoch 5/5, Loss: 55.637512880060264
+2024-11-17 20:46:46,125 - INFO - Epoch 1/5, Loss: 63.57606257924592
+2024-11-17 20:46:53,975 - INFO - Epoch 2/5, Loss: 58.87699291036954
+2024-11-17 20:47:01,872 - INFO - Epoch 3/5, Loss: 57.29304347570975
+2024-11-17 20:47:09,870 - INFO - Epoch 4/5, Loss: 56.0364238117956
+2024-11-17 20:47:17,856 - INFO - Epoch 5/5, Loss: 55.42683771658658
+2024-11-17 20:47:36,341 - INFO - Successfully Loaded Config File
+2024-11-17 20:47:37,330 - INFO - Successfully Loaded and Processed Data
+2024-11-17 20:47:37,331 - INFO - Starting Final Training with the hyperparameters:
+2024-11-17 20:47:37,331 - INFO - hidden_dim: 1024
+2024-11-17 20:47:37,331 - INFO - learning_rate: 0.001
+2024-11-17 20:47:37,331 - INFO - batch_size: 32
+2024-11-17 20:47:37,331 - INFO - epochs: 5
+2024-11-17 20:47:37,331 - INFO - imputation_strategy: median
+2024-11-17 20:47:37,331 - INFO - dropout: 0.5
+2024-11-17 20:47:38,084 - INFO - Successfully Initialized Model and Optimizer
+2024-11-17 20:47:38,084 - INFO - Fitting Imputer and Scaler on Training Data
+2024-11-17 20:47:38,759 - INFO - Successfully Fitted Imputer and Scaler on Training Data
+2024-11-17 20:47:38,759 - INFO - Saving the scaler and imputer...
+2024-11-17 20:47:38,761 - INFO - Successfully Saved the Scaler and Imputer
+2024-11-17 20:47:38,761 - INFO - Scaling and Imputing Training Data...
+2024-11-17 20:47:38,891 - INFO - Successfully Scaled and Imputed Training Data
+2024-11-17 20:47:38,892 - INFO - Training Final Model...
+2024-11-17 20:47:46,441 - INFO - Epoch 1/5, Loss: 63.49253917257114
+2024-11-17 20:47:53,530 - INFO - Epoch 2/5, Loss: 58.85756217436894
+2024-11-17 20:48:00,678 - INFO - Epoch 3/5, Loss: 56.875984014741405
+2024-11-17 20:48:07,970 - INFO - Epoch 4/5, Loss: 56.01837631792476
+2024-11-17 20:48:15,140 - INFO - Epoch 5/5, Loss: 54.78798917055868
+2024-11-17 20:48:15,380 - INFO - Successfully Trained Final Model
+2024-11-17 20:48:15,380 - INFO - Saving Final Model...
+2024-11-17 20:48:15,402 - INFO - Successfully Saved Final Model
+2024-11-17 20:48:15,402 - INFO - Training Completed
+2024-11-17 20:54:39,873 - INFO - Epoch 1/5, Loss: 63.27232542593408
+2024-11-17 20:54:47,432 - INFO - Epoch 2/5, Loss: 59.108963369308114
+2024-11-17 20:54:55,013 - INFO - Epoch 3/5, Loss: 57.21429207669292
+2024-11-17 20:55:02,710 - INFO - Epoch 4/5, Loss: 55.94094589842377
+2024-11-17 20:55:10,387 - INFO - Epoch 5/5, Loss: 55.710053275286015
+2024-11-17 20:55:19,639 - INFO - Epoch 1/5, Loss: 63.36868098256374
+2024-11-17 20:55:27,561 - INFO - Epoch 2/5, Loss: 58.834548779989134
+2024-11-17 20:55:37,474 - INFO - Epoch 3/5, Loss: 57.70783623947435
+2024-11-17 20:55:48,222 - INFO - Epoch 4/5, Loss: 57.12181294163339
+2024-11-17 20:55:58,659 - INFO - Epoch 5/5, Loss: 56.31154072085746
+2024-11-17 20:56:07,865 - INFO - Epoch 1/5, Loss: 63.6777557006324
+2024-11-17 20:56:15,667 - INFO - Epoch 2/5, Loss: 59.276861183487426
+2024-11-17 20:56:23,718 - INFO - Epoch 3/5, Loss: 57.77475775165194
+2024-11-17 20:56:31,759 - INFO - Epoch 4/5, Loss: 56.16384461205402
+2024-11-17 20:56:39,675 - INFO - Epoch 5/5, Loss: 55.19368493654422
+2024-11-17 20:56:49,188 - INFO - Epoch 1/5, Loss: 63.44511320025784
+2024-11-17 20:56:57,175 - INFO - Epoch 2/5, Loss: 59.004872394842415
+2024-11-17 20:57:05,227 - INFO - Epoch 3/5, Loss: 57.8065737398184
+2024-11-17 20:57:13,350 - INFO - Epoch 4/5, Loss: 56.1091989522409
+2024-11-17 20:57:21,433 - INFO - Epoch 5/5, Loss: 56.11583275626076
+2024-11-17 20:57:31,203 - INFO - Epoch 1/5, Loss: 63.87437553886497
+2024-11-17 20:57:39,055 - INFO - Epoch 2/5, Loss: 59.06336733171011
+2024-11-17 20:57:47,109 - INFO - Epoch 3/5, Loss: 57.31902958814065
+2024-11-17 20:57:55,130 - INFO - Epoch 4/5, Loss: 56.02943738929582
+2024-11-17 20:58:03,089 - INFO - Epoch 5/5, Loss: 55.14041070912125

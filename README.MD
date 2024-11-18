@@ -3,10 +3,13 @@
 ## Project News & Status Quo
 This is still a work in progress! Stay tuned for more updates:
 
+- [ ] Add poetry setup
 - [x] Add Hyperparameter Tuning Logic
-- [ ] Add logging to train.py
-- [ ] Add hyperparameters to cv_results for ease of analysis
-- [ ] Write plotting logic for model loss
+- [x] Add logging to train.py
+- [x] Fix duplicate logger creation
+- [ ] Make model training loop progress more verbose
+- [x] Add hyperparameters to cv_results for ease of analysis
+- [x] Write plotting logic for model loss
 - [ ] write plotting logic for test mean auc
 - [ ] Add additional Hyperparameters for flexibility
 - [ ] Write Notebook exploring sparse features

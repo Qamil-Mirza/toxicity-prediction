@@ -9,11 +9,13 @@ import torch
 import joblib
 import os
 from utils.loggers import setup_logger
+from utils.visualize import plot_model_loss
 
 # === LOGGER === #
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_path = os.path.join(project_root, "src/logs/training.log")
 train_logger = setup_logger("training_logger", log_path)
+print(f"Handlers for {train_logger.name}: {train_logger.handlers}")
 
 # === CONFIG === #
 with open("config.yaml") as stream:
@@ -79,6 +81,7 @@ final_model, final_epoch_losses = train_model(model, optimizer, X_final_train, y
                                               )
 
 # TODO: VISUALIZE TRAINING LOSS and SAVE TO PLOT
+plot_model_loss(final_epoch_losses, "final-model-loss.png")
 
 # SAVE THE MODEL
 train_logger.info("Successfully Trained Final Model")

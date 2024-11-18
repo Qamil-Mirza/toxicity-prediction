@@ -3,18 +3,21 @@ import os
 
 # Define loggers for training and testing
 def setup_logger(name, log_file, level=logging.INFO):
-    """Set up a logger with the given name and log file."""
-    handler = logging.FileHandler(log_file, mode='w')  # 'w' overwrites the file
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
-
     logger = logging.getLogger(name)
-    logger.setLevel(level)
-    logger.addHandler(handler)
 
-    # Console handler
-    console_handler = logging.StreamHandler()
-    console_formatter = logging.Formatter('%(levelname)s - %(message)s')  # Simpler format for console
-    console_handler.setFormatter(console_formatter)
-    logger.addHandler(console_handler)
+    # Check if the logger already has handlers to avoid duplicates
+    if not logger.hasHandlers():
+        # File handler
+        file_handler = logging.FileHandler(log_file)
+        file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(file_formatter)
+        logger.addHandler(file_handler)
+
+        # Stream logs to console
+        stream_handler = logging.StreamHandler()
+        stream_formatter = logging.Formatter('%(levelname)s: %(message)s')
+        stream_handler.setFormatter(stream_formatter)
+        logger.addHandler(stream_handler)
+
+    logger.setLevel(level)
     return logger
