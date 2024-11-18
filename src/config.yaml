@@ -2,7 +2,7 @@ hyperparameters:
   hidden_dim: 1024
   learning_rate: 0.001
   batch_size: 32
-  epochs: 5
+  epochs: 10
   dropout: 0.5
 
 cross_validation:

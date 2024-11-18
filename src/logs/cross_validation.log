@@ -66,3 +66,25 @@
 2024-11-17 20:57:21,617 - INFO - Fold 4 AUCs: {'fold': 4, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.8489492627423663, 'auc_NR.AR': 0.7048816568047337, 'auc_NR.AR.LBD': 0.8324404761904762, 'auc_NR.Aromatase': 0.8008778008778008, 'auc_NR.ER': 0.644282970015869, 'auc_NR.ER.LBD': 0.7828801611278954, 'auc_NR.PPAR.gamma': 0.8903225806451612, 'auc_SR.ARE': 0.7165318957771788, 'auc_SR.ATAD5': 0.7690476190476191, 'auc_SR.HSE': 0.7707543194268858, 'auc_SR.MMP': 0.8317078025477707, 'auc_SR.p53': 0.7838235294117647}
 2024-11-17 20:58:03,259 - INFO - Fold 5 AUCs: {'fold': 5, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.7665733706517394, 'auc_NR.AR': 0.80625, 'auc_NR.AR.LBD': 0.924404761904762, 'auc_NR.Aromatase': 0.8116071428571429, 'auc_NR.ER': 0.686431989063568, 'auc_NR.ER.LBD': 0.8390735146022156, 'auc_NR.PPAR.gamma': 0.7580357142857143, 'auc_SR.ARE': 0.7351752021563343, 'auc_SR.ATAD5': 0.8145068145068145, 'auc_SR.HSE': 0.884272997032641, 'auc_SR.MMP': 0.8516397124887691, 'auc_SR.p53': 0.9051490514905149}
 2024-11-17 20:58:03,264 - INFO - Cross-Validation Results Saved to results/cv_results_with_hyperparams.csv
+2024-11-17 21:11:38,945 - INFO - Successfully Loaded Config File
+2024-11-17 21:11:38,945 - INFO - Beginning Cross-Validation With The Following Hyperparameters:
+2024-11-17 21:11:38,945 - INFO - hidden_dim: 1024
+2024-11-17 21:11:38,946 - INFO - learning_rate: 0.001
+2024-11-17 21:11:38,946 - INFO - batch_size: 32
+2024-11-17 21:11:38,946 - INFO - epochs: 10
+2024-11-17 21:11:38,946 - INFO - imputation_strategy: median
+2024-11-17 21:11:38,946 - INFO - dropout: 0.5
+2024-11-17 21:11:38,946 - INFO - Successfully Initialized KFold Cross-Validation with the following configuration:
+2024-11-17 21:11:38,946 - INFO - n_splits: 5
+2024-11-17 21:11:38,946 - INFO - random_state: 42
+2024-11-17 21:11:38,946 - INFO - Loading Imputer and Scaler...
+2024-11-17 21:11:39,051 - INFO - Successfully Loaded Imputer and Scaler
+2024-11-17 21:11:39,051 - INFO - Loading and Processing Data...
+2024-11-17 21:11:40,061 - INFO - Successfully Loaded and Processed Data
+2024-11-17 21:11:40,061 - INFO - Starting Cross-Validation...
+2024-11-17 21:12:51,496 - INFO - Fold 1 AUCs: {'fold': 1, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.8413919413919414, 'auc_NR.AR': 0.8163878163878164, 'auc_NR.AR.LBD': 0.8504451038575667, 'auc_NR.Aromatase': 0.6515450361604208, 'auc_NR.ER': 0.741891064871481, 'auc_NR.ER.LBD': 0.8625474729769208, 'auc_NR.PPAR.gamma': 0.7819327731092436, 'auc_SR.ARE': 0.8050595238095237, 'auc_SR.ATAD5': 0.8298019345923537, 'auc_SR.HSE': 0.7448071216617211, 'auc_SR.MMP': 0.8514652014652014, 'auc_SR.p53': 0.7582329317269076}
+2024-11-17 21:14:14,314 - INFO - Fold 2 AUCs: {'fold': 2, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.8437834941050375, 'auc_NR.AR': 0.7792207792207791, 'auc_NR.AR.LBD': 0.9436974789915966, 'auc_NR.Aromatase': 0.903061224489796, 'auc_NR.ER': 0.6838827838827839, 'auc_NR.ER.LBD': 0.8223880597014925, 'auc_NR.PPAR.gamma': 0.6395348837209303, 'auc_SR.ARE': 0.6793673616103523, 'auc_SR.ATAD5': 0.9173998044965787, 'auc_SR.HSE': 0.5254154447702835, 'auc_SR.MMP': 0.8093129361245304, 'auc_SR.p53': 0.7951522951522951}
+2024-11-17 21:15:50,122 - INFO - Fold 3 AUCs: {'fold': 3, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.8641688449995159, 'auc_NR.AR': 0.6683853459972863, 'auc_NR.AR.LBD': 0.9144542772861357, 'auc_NR.Aromatase': 0.8364938895912347, 'auc_NR.ER': 0.6005376344086022, 'auc_NR.ER.LBD': 0.8765264586160109, 'auc_NR.PPAR.gamma': 0.821700879765396, 'auc_SR.ARE': 0.7933356554046209, 'auc_SR.ATAD5': 0.7386904761904762, 'auc_SR.HSE': 0.8153692614770459, 'auc_SR.MMP': 0.7963836477987422, 'auc_SR.p53': 0.8455357142857143}
+2024-11-17 21:17:21,557 - INFO - Fold 4 AUCs: {'fold': 4, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.9013119702774874, 'auc_NR.AR': 0.7736686390532544, 'auc_NR.AR.LBD': 0.8276785714285714, 'auc_NR.Aromatase': 0.7505197505197505, 'auc_NR.ER': 0.6431136724296335, 'auc_NR.ER.LBD': 0.7969788519637463, 'auc_NR.PPAR.gamma': 0.8469208211143695, 'auc_SR.ARE': 0.6896900269541779, 'auc_SR.ATAD5': 0.9148809523809525, 'auc_SR.HSE': 0.8794774546986937, 'auc_SR.MMP': 0.8681329617834395, 'auc_SR.p53': 0.8549019607843138}
+2024-11-17 21:18:43,608 - INFO - Fold 5 AUCs: {'fold': 5, 'hidden_dim': 1024, 'learning_rate': 0.001, 'batch_size': 32, 'dropout': 0.5, 'auc_NR.AhR': 0.7893642542982807, 'auc_NR.AR': 0.843452380952381, 'auc_NR.AR.LBD': 0.88125, 'auc_NR.Aromatase': 0.8788690476190476, 'auc_NR.ER': 0.7535885167464115, 'auc_NR.ER.LBD': 0.7919436052366565, 'auc_NR.PPAR.gamma': 0.6976190476190476, 'auc_SR.ARE': 0.6783468104222822, 'auc_SR.ATAD5': 0.8272118272118272, 'auc_SR.HSE': 0.7029343883943291, 'auc_SR.MMP': 0.816711590296496, 'auc_SR.p53': 0.8267276422764228}
+2024-11-17 21:18:43,614 - INFO - Cross-Validation Results Saved to results/cv_results_with_hyperparams.csv

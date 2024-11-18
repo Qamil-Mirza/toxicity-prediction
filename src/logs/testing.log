@@ -85,3 +85,20 @@
 2024-11-17 21:08:03,961 - INFO - Testing complete!
 2024-11-17 21:08:03,961 - INFO - Results saved to results/final_test_results.csv
 2024-11-17 21:08:03,961 - INFO - Plots saved to plots/test-mean-auc.png
+2024-11-17 21:20:56,615 - INFO - Final Test AUCs for each task:
+2024-11-17 21:20:56,615 - INFO - NR.AhR: 0.884
+2024-11-17 21:20:56,615 - INFO - NR.AR: 0.784
+2024-11-17 21:20:56,615 - INFO - NR.AR.LBD: 0.888
+2024-11-17 21:20:56,615 - INFO - NR.Aromatase: 0.811
+2024-11-17 21:20:56,615 - INFO - NR.ER: 0.750
+2024-11-17 21:20:56,615 - INFO - NR.ER.LBD: 0.760
+2024-11-17 21:20:56,615 - INFO - NR.PPAR.gamma: 0.737
+2024-11-17 21:20:56,615 - INFO - SR.ARE: 0.785
+2024-11-17 21:20:56,616 - INFO - SR.ATAD5: 0.781
+2024-11-17 21:20:56,616 - INFO - SR.HSE: 0.798
+2024-11-17 21:20:56,616 - INFO - SR.MMP: 0.923
+2024-11-17 21:20:56,616 - INFO - SR.p53: 0.796
+2024-11-17 21:20:56,618 - INFO - Plotting the mean AUC on the test set...
+2024-11-17 21:21:41,467 - INFO - Testing complete!
+2024-11-17 21:21:41,467 - INFO - Results saved to results/final_test_results.csv
+2024-11-17 21:21:41,467 - INFO - Plots saved to plots/test-mean-auc.png

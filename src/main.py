@@ -15,7 +15,6 @@ from utils.visualize import plot_model_loss
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_path = os.path.join(project_root, "src/logs/training.log")
 train_logger = setup_logger("training_logger", log_path)
-print(f"Handlers for {train_logger.name}: {train_logger.handlers}")
 
 # === CONFIG === #
 with open("config.yaml") as stream:

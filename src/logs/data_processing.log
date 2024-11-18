@@ -117,3 +117,43 @@
 2024-11-17 21:07:57,137 - INFO - Successfully Imputed and Scaled Test Data
 2024-11-17 21:07:57,137 - INFO - Generating Masks For Missing Labels in Test Data
 2024-11-17 21:07:57,138 - INFO - Successfully Generated Masks For Missing Labels in Test Data
+2024-11-17 21:11:39,954 - INFO - Successfully Loaded Training Data
+2024-11-17 21:11:39,954 - INFO - X Train Dimensions: (12060, 802)
+2024-11-17 21:11:39,954 - INFO - Y Train Dimensions: (12060, 13)
+2024-11-17 21:11:39,954 - INFO - Now merging X train and Y train for train-validation splitting
+2024-11-17 21:11:39,979 - INFO - Successfully Merged X Train and Y Train
+2024-11-17 21:11:39,979 - INFO - Train DataFrame Dimensions: (12060, 814)
+2024-11-17 21:11:40,024 - INFO - Successfully Split Train DataFrame into Cross Validation and Final Train DataFrames
+2024-11-17 21:11:40,024 - INFO - CV DataFrame Dimensions: (2412, 814)
+2024-11-17 21:11:40,024 - INFO - Final Train DataFrame Dimensions: (9648, 814)
+2024-11-17 21:11:40,024 - INFO - Calculating Class Density For Cross Validation -- Keeping only compounds with at least 8 labels in cross validation set
+2024-11-17 21:11:40,029 - INFO - Successfully Filtered Cross Validation DataFrame
+2024-11-17 21:11:40,029 - INFO - Concatening unused rows from cross validation set to final train set
+2024-11-17 21:11:40,058 - INFO - Successfully Concatenated Unused Rows from Cross Validation Set to Final Train Set
+2024-11-17 21:11:40,059 - INFO - Final Train DataFrame Dimensions: (10328, 815)
+2024-11-17 21:11:40,059 - INFO - Filtered CV DataFrame Dimensions: (1732, 815)
+2024-11-17 21:19:31,256 - INFO - Successfully Loaded Training Data
+2024-11-17 21:19:31,256 - INFO - X Train Dimensions: (12060, 802)
+2024-11-17 21:19:31,256 - INFO - Y Train Dimensions: (12060, 13)
+2024-11-17 21:19:31,256 - INFO - Now merging X train and Y train for train-validation splitting
+2024-11-17 21:19:31,297 - INFO - Successfully Merged X Train and Y Train
+2024-11-17 21:19:31,298 - INFO - Train DataFrame Dimensions: (12060, 814)
+2024-11-17 21:19:31,364 - INFO - Successfully Split Train DataFrame into Cross Validation and Final Train DataFrames
+2024-11-17 21:19:31,364 - INFO - CV DataFrame Dimensions: (2412, 814)
+2024-11-17 21:19:31,364 - INFO - Final Train DataFrame Dimensions: (9648, 814)
+2024-11-17 21:19:31,364 - INFO - Calculating Class Density For Cross Validation -- Keeping only compounds with at least 8 labels in cross validation set
+2024-11-17 21:19:31,370 - INFO - Successfully Filtered Cross Validation DataFrame
+2024-11-17 21:19:31,371 - INFO - Concatening unused rows from cross validation set to final train set
+2024-11-17 21:19:31,435 - INFO - Successfully Concatenated Unused Rows from Cross Validation Set to Final Train Set
+2024-11-17 21:19:31,435 - INFO - Final Train DataFrame Dimensions: (10328, 815)
+2024-11-17 21:19:31,435 - INFO - Filtered CV DataFrame Dimensions: (1732, 815)
+2024-11-17 21:19:32,345 - INFO - Fitting Imputer and Scaler on Training Data
+2024-11-17 21:19:32,345 - INFO - Fitting Scaler
+2024-11-17 21:19:32,468 - INFO - Fitting Imputer
+2024-11-17 21:20:56,511 - INFO - Successfully Loaded Test Data
+2024-11-17 21:20:56,512 - INFO - X Test Dimensions: (647, 802)
+2024-11-17 21:20:56,512 - INFO - Y Test Dimensions: (647, 12)
+2024-11-17 21:20:56,512 - INFO - Imputing and Scaling Test Data
+2024-11-17 21:20:56,523 - INFO - Successfully Imputed and Scaled Test Data
+2024-11-17 21:20:56,523 - INFO - Generating Masks For Missing Labels in Test Data
+2024-11-17 21:20:56,523 - INFO - Successfully Generated Masks For Missing Labels in Test Data
